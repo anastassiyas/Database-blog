@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav-area">
+                <ul class="mcd-menu">
+                    <li>
+                        <a href="">
+                            <i class="fa fa-home"></i>
+                            <strong>Home</strong>
+                            <small>sweet home</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="active">
+                            <i class="fa fa-edit"></i>
+                            <strong>About us</strong>
+                            <small>sweet home</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-gift"></i>
+                            <strong>Features</strong>
+                            <small>sweet home</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-globe"></i>
+                            <strong>News</strong>
+                            <small>sweet home</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-comments-o"></i>
+                            <strong>Blog</strong>
+                            <small>what they say</small>
+                        </a>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-globe"></i>Mission</a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-group"></i>Our Team</a>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-female"></i>Leyla Sparks</a></li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-male"></i>Gleb Ismailov</a>
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-leaf"></i>About</a></li>
+                                            <li><a href="#"><i class="fa fa-tasks"></i>Skills</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-female"></i>Viktoria Gibbers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="fa fa-trophy"></i>Rewards</a></li>
+                            <li><a href="#"><i class="fa fa-certificate"></i>Certificates</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-picture-o"></i>
+                            <strong>Portfolio</strong>
+                            <small>sweet home</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-envelope-o"></i>
+                            <strong>Contacts</strong>
+                            <small>drop a line</small>
+                        </a>
+                    </li>
+                    <li class="float">
+                        <a class="search">
+                            <input type="text" value="search ...">
+                            <button><i class="fa fa-search"></i></button>
+                        </a>
+                        <a href="" class="search-mobile">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+<!--Blog Post 1-->
+<div class="left-content">
+    <h1>Database blog</h1>
+    <h2>6 Steps for Setting Up a Database</h2>
+
+
+    <p>Define the high level requirements of the enterprise (this step generates a document known as the system requirements specification.)</p>
+    <p>Define a model containing all appropriate types of data and data relationships.</p>
+    <p>Define the integrity constraints on the data.</p>
+    <p>Define the physical level.</p>
+    <p>For each known problem to be solved on a regular basis (e.g., tasks to be carried out by clerks or Web users) define a user interface to carry out the task, and write the necessary application programs to implement the user interface.</p>
+    <p>Create/initialize the database.</p>
+<!--End Post 1-->               
+       
+<!--Blog Post 2-->
+<div class="container2">
+    <h2>Five types of SQL commands</h2>
+    <p>
+        DDL changes the structure of the table. With DDL, you can <strong>CREATE</strong>, <strong>ALTER</strong>, <strong>DROP</strong>, or <strong>TRUNCATE</strong>
+        a table. Those words in all caps are examples DDL commands.
+    
+        <img src="images/SQL-Command-Types.png"alt="types" width="350px" height="250px"></p>
+        
+        <h3><strong>Data Definition Language (DDL)</strong></h3>
+        
+        <ul>
+            <li>DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.</li>
+            <li>All the command of DDL are auto-committed that means it permanently save all the changes in the database.</li>
+        </ul>
+        <h4>Here are some commands that come under DDL:</h4>
+        
+    <div class="flex1">
+        <p>
+        <h4>CREATE</h4>
+        <h4><strong>It is used to create a new table in the database.
+            </strong></h4>
+        <ul>
+            <li><strong>Syntax:</strong></li>
+            <li>CREATE TABLE TABLE_NAME (COLUMN_NAME DATATYPES[,....]);  </li>
+            <li><strong>Example:</strong></li>
+            <li>CREATE TABLE EMPLOYEE(Name VARCHAR2(20), Email VARCHAR2(100), DOB DATE);  </li>
+        </ul>
+       
+        </div>
+        <div class="flex2">
+          
+        <h4>ALTER: </h4>
+        <h4><strong>It is used to alter the structure of the database. This change could be either
+             to modify the characteristics of an existing attribute or probably to add a new attribute.
+            </strong></h4>
+        <ul>
+            <li><strong>Syntax:</strong>To add a new column in the table</li>
+            <li>ALTER TABLE table_name ADD column_name COLUMN-definition;    </li>
+            <li><strong>Example:</strong></li>
+            <li>ALTER TABLE STU_DETAILS ADD(ADDRESS VARCHAR2(20));  </li>
+        </ul>
+    
+      
+    </div>
+
+    <div class="flex3">
+        
+    <h4>DROP: </h4>
+    <h4><strong>It is used to delete both the structure and record stored in the table.
+        </strong></h4>
+    <ul>
+        <li><strong>Syntax:</strong>To add a new column in the table</li>
+        <li>DROP TABLE table_name;  </li>
+        <li><strong>Example:</strong></li>
+        <li>DROP TABLE EMPLOYEE;  </li>
+    </ul>
+ 
+</div>
+
+<div class="flex4">
+   
+<h4>TRUNCATE: </h4>
+<h4><strong>It is used to delete all the rows from the table and free the space containing the table.
+    </strong></h4>
+<ul>
+    <li><strong>Syntax:</strong></li>
+    <li>TRUNCATE TABLE table_name;  </li>
+    <li><strong>Example:</strong></li>
+    <li>TRUNCATE TABLE EMPLOYEE; </li>
+</ul>
+
+</div>
+
+
+<h3><strong>Data Manipulation Language (DML)</strong></h3>
+        
+<ul>
+    <li>DML commands are used to modify the database. It is responsible for all form of changes in the database.</li>
+    <li>The command of DML is not auto-committed that means it can't permanently save all the changes in the database. They can be rollback.</li>
+</ul>
+<h4>Here are some commands that come under DML:
+    o	INSERT
+    o	UPDATE
+    o	DELETE
+    </h4>
+
+<div class="flex5">
+<p>
+<h4>INSERT:</h4>
+<h4><strong> The INSERT statement is a SQL query. It is used to insert data into the row of a table.
+    </strong></h4>
+<ul>
+    <li><strong>Syntax:</strong></li>
+    <li>1.	INSERT INTO TABLE_NAME    
+        2.	(col1, col2, col3,.... col N)  
+        3.	VALUES (value1, value2, value3, .... valueN);  
+        Or
+        1.	INSERT INTO TABLE_NAME    
+        2.	VALUES (value1, value2, value3, .... valueN);    
+         </li>
+    <li><strong>Example:</strong></li>
+    <li>1.	INSERT INTO javatpoint (Author, Subject) VALUES ("Sonoo", "DBMS");  </li>
+</ul>
+
+</div>
+<div class="flex6">
+  
+<h4>UPDATE: </h4>
+<h4><strong>This command is used to update or modify the value of a column in the table.
+    </strong></h4>
+<ul>
+    <li><strong>Syntax:</strong></li>
+    <li>1.	UPDATE table_name SET [column_name1= value1,...column_nameN = valueN] [WHERE CONDITION]</li>
+    <li><strong>Example:</strong></li>
+    <li>1.	UPDATE students    
+        2.	SET User_Name = 'Sonoo'    
+        3.	WHERE Student_Id = '3'  
+        </li>
+</ul>
+
+
+</div>
+
+<div class="flex7">
+
+<h4>DELETE: </h4>
+<h4><strong>It is used to remove one or more row from a table.
+</strong></h4>
+<ul>
+<li><strong>Syntax:</strong></li>
+<li>DELETE FROM table_name [WHERE condition];  </li>
+<li><strong>Example:</strong></li>
+<li>1.	DELETE FROM javatpoint  
+    2.	WHERE Author="Sonoo";  
+    </li>
+</ul>
+
+</div>
+<h3><strong>Data Control Language (DCL)</strong></h3>
+        
+<ul>
+    <li>DCL commands are used to grant and take back authority from any database user.
+        Here are some commands that come under DCL:
+        </li>
+ 
+</ul>
+<h4>Here are some commands that come under DCL:
+Grant
+Revoke
+
+    </h4>
+
+<div class="flex8">
+<p>
+<h4>Grant: </h4>
+<h4><strong>It is used to give user access privileges to a database.
+    </strong></h4>
+<ul>
+   
+    <li><strong>Example:</strong></li>
+    <li>GRANT SELECT, UPDATE ON MY_TABLE TO SOME_USER, ANOTHER_USER;  </li>
+</ul>
+
+</div>
+<div class="flex9">
+  
+<h4>REVOKE: </h4>
+<h4><strong>It is used to take back permissions from the user.
+    </strong></h4>
+<ul>
+    
+    <li><strong>Example:</strong></li>
+    <li>REVOKE SELECT, UPDATE ON MY_TABLE FROM USER1, USER2;  
+        </li>
+</ul>
+</div>
+
+
+
+
+<h3><strong>Transaction Control Language (TCL)</strong></h3>
+        
+<ul>
+    <li>TCL commands can only use with DML commands like INSERT, DELETE and UPDATE only.</li>
+    <li>These operations are automatically committed in the database that's why they cannot be used while creating tables or dropping them.</li>
+</ul>
+<h4>Here are some commands that come under TCL:
+    o	COMMIT
+    o	ROLLBACK
+    o	SAVEPOINT
+    
+    </h4>
+
+<div class="flex10">
+<p>
+<h4>COMMIT:</h4>
+<h4><strong>Commit command is used to save all the transactions to the database.
+    </strong></h4>
+<ul>
+    <li><strong>Syntax:</strong></li>
+    <li>COMMIT;  
+         </li>
+    <li><strong>Example:</strong></li>
+    <li>1.	DELETE FROM CUSTOMERS  
+        2.	WHERE AGE = 25;  
+        3.	COMMIT;  
+        </li>
+</ul>
+
+</div>
+<div class="flex11">
+  
+<h4>ROLLBACK: </h4>
+<h4><strong>. Rollback: Rollback command is used to undo transactions that have not already been saved to the database.
+    </strong></h4>
+<ul>
+    <li><strong>Syntax:</strong></li>
+    <li>ROLLBACK;</li>
+    <li><strong>Example:</strong></li>
+    <li>1.	DELETE FROM CUSTOMERS  
+        2.	WHERE AGE = 25;  
+        3.	ROLLBACK;  
+        
+        </li>
+</ul>
+
+
+</div>
+
+<div class="flex12">
+
+<h4>SAVEPOINT:</h4>
+<h4><strong> It is used to roll the transaction back to a certain point without rolling back the entire transaction.
+</strong></h4>
+<ul>
+<li><strong>Syntax:</strong></li>
+<li>SAVEPOINT SAVEPOINT_NAME;   </li>
+
+</ul>
+
+</div>
+
+<h3><strong>Data Query Language(DQL)</strong></h3>
+        
+<ul>
+    <li>DQL is used to fetch the data from the database.</li>
+    
+</ul>
+<h4>It uses only one command:
+    o	SELECT
+    
+    
+    </h4>
+
+<div class="flex13">
+<p>
+<h4>SELECT:</h4>
+<h4><strong>SELECT: This is the same as the projection operation of relational algebra. It is used to select the attribute based on the condition described by WHERE clause.
+    </strong></h4>
+<ul>
+    <li><strong>Syntax:</strong></li>
+    <li>1.	SELECT expressions    
+        2.	FROM TABLES    
+        3.	WHERE conditions;  
+        
+         </li>
+    <li><strong>Example:</strong></li>
+    <li>1.	SELECT emp_name  
+        2.	FROM employee  
+        3.	WHERE age > 20;  
+        
+        </li>
+</ul>
+
+</div>
+
+ 
+       
+</div>
+</div>
+</div>
+</div>
+</div> 
+
+
+</section>
+<link rel="stylesheet" type="text/css"
+            href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+        <script type="text/javascript"
+            id="hcb"> /*<!--*/ if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"), h = "https://www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24gkRowl4jZVzTk9lyxGCaV1" + "&opts=16862&num=10&ts=1603987299642"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })(); /*-->*/ </script>
+        <!-- end www.htmlcommentbox.com -->
+    </div>
+    </div>
+</body>
+</html>
