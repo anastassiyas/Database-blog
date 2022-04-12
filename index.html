@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Blog</title>
+    <title>Database blog</title>
 </head>
 <body>
     <div class="wrapper">
@@ -37,14 +37,14 @@
                         <a href="">
                             <i class="fa fa-globe"></i>
                             <strong>News</strong>
-                            <small>sweet home</small>
+                            <small>All News</small>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <i class="fa fa-comments-o"></i>
                             <strong>Blog</strong>
-                            <small>what they say</small>
+                            <small>What they say</small>
                         </a>
                         <ul>
                             <li><a href="#"><i class="fa fa-globe"></i>Mission</a></li>
@@ -70,14 +70,14 @@
                         <a href="">
                             <i class="fa fa-picture-o"></i>
                             <strong>Portfolio</strong>
-                            <small>sweet home</small>
+                            <small>My Portfolio</small>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <i class="fa fa-envelope-o"></i>
                             <strong>Contacts</strong>
-                            <small>drop a line</small>
+                            <small>Contact Me</small>
                         </a>
                     </li>
                     <li class="float">
@@ -96,109 +96,123 @@
 <div class="left-content">
     <h1>Database blog</h1>
     <h2>6 Steps for Setting Up a Database</h2>
-
-
-    <p>Define the high level requirements of the enterprise (this step generates a document known as the system requirements specification.)</p>
-    <p>Define a model containing all appropriate types of data and data relationships.</p>
-    <p>Define the integrity constraints on the data.</p>
-    <p>Define the physical level.</p>
-    <p>For each known problem to be solved on a regular basis (e.g., tasks to be carried out by clerks or Web users) define a user interface to carry out the task, and write the necessary application programs to implement the user interface.</p>
-    <p>Create/initialize the database.</p>
+    <br>
+    <p>1. Define the high level requirements of the enterprise (this step generates a document known as the system requirements specification.)</p>
+    <p>2. Define a model containing all appropriate types of data and data relationships.</p>
+    <p>3. Define the integrity constraints on the data.</p>
+    <p>4. Define the physical level.</p>
+    <p>5. For each known problem to be solved on a regular basis (e.g., tasks to be carried out by clerks or Web users) define a user interface to carry out the task, and write the necessary application programs to implement the user interface.</p>
+    <p>6. Create/initialize the database.</p>
+    <br>
+    <br>
+    <br>
 <!--End Post 1-->               
        
 <!--Blog Post 2-->
 <div class="container2">
     <h2>Five types of SQL commands</h2>
-    <p>
-        DDL changes the structure of the table. With DDL, you can <strong>CREATE</strong>, <strong>ALTER</strong>, <strong>DROP</strong>, or <strong>TRUNCATE</strong>
-        a table. Those words in all caps are examples DDL commands.
+    <br>
     
-        <img src="images/SQL-Command-Types.png"alt="types" width="350px" height="250px"></p>
+        <img src="images/SQL-Command-Types.png" alt="types" width="350px" height="250px"></p>
         
         <h3><strong>Data Definition Language (DDL)</strong></h3>
+        <br>
+        <p>DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.</p>
+        <p>All the command of DDL are auto-committed that means it permanently save all the changes in the database.
         
-        <ul>
-            <li>DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.</li>
-            <li>All the command of DDL are auto-committed that means it permanently save all the changes in the database.</li>
-        </ul>
-        <h4>Here are some commands that come under DDL:</h4>
-        
+    </p>
+    <p>Here are some commands that come under DDL:</p>
+    <br>    
     <div class="flex1">
-        <p>
-        <h4>CREATE</h4>
-        <h4><strong>It is used to create a new table in the database.
-            </strong></h4>
+        
+        <h4>CREATE:</h4>
+        <p>It is used to create a new table in the database.</p>
+        <br>
         <ul>
             <li><strong>Syntax:</strong></li>
             <li>CREATE TABLE TABLE_NAME (COLUMN_NAME DATATYPES[,....]);  </li>
+            <br>
             <li><strong>Example:</strong></li>
             <li>CREATE TABLE EMPLOYEE(Name VARCHAR2(20), Email VARCHAR2(100), DOB DATE);  </li>
+        <br>
         </ul>
-       
-        </div>
+    </div>
+    <br>
+    <hr>
         <div class="flex2">
-          
+            <br>  
         <h4>ALTER: </h4>
-        <h4><strong>It is used to alter the structure of the database. This change could be either
+        <br>
+        <p>It is used to alter the structure of the database. This change could be either
              to modify the characteristics of an existing attribute or probably to add a new attribute.
-            </strong></h4>
+        </p>
+        <br>
         <ul>
             <li><strong>Syntax:</strong>To add a new column in the table</li>
             <li>ALTER TABLE table_name ADD column_name COLUMN-definition;    </li>
+            <br>
             <li><strong>Example:</strong></li>
             <li>ALTER TABLE STU_DETAILS ADD(ADDRESS VARCHAR2(20));  </li>
         </ul>
-    
-      
-    </div>
+        </div>
+    <br>
+    <hr>
 
     <div class="flex3">
-        
+        <br>   
     <h4>DROP: </h4>
-    <h4><strong>It is used to delete both the structure and record stored in the table.
-        </strong></h4>
+    <br>
+    <p>It is used to delete both the structure and record stored in the table.
+    </p>
+    <br>
     <ul>
         <li><strong>Syntax:</strong>To add a new column in the table</li>
         <li>DROP TABLE table_name;  </li>
-        <li><strong>Example:</strong></li>
+                <br><li><strong>Example:</strong></li>
         <li>DROP TABLE EMPLOYEE;  </li>
     </ul>
- 
-</div>
+ </div>
+ <br>
+<hr>
 
 <div class="flex4">
-   
+    <br>  
 <h4>TRUNCATE: </h4>
-<h4><strong>It is used to delete all the rows from the table and free the space containing the table.
-    </strong></h4>
+<br>
+<p>It is used to delete all the rows from the table and free the space containing the table.
+</p>
+<br>
 <ul>
     <li><strong>Syntax:</strong></li>
     <li>TRUNCATE TABLE table_name;  </li>
+    <br>
     <li><strong>Example:</strong></li>
     <li>TRUNCATE TABLE EMPLOYEE; </li>
 </ul>
-
 </div>
-
+<br>
+<br>
 
 <h3><strong>Data Manipulation Language (DML)</strong></h3>
-        
-<ul>
-    <li>DML commands are used to modify the database. It is responsible for all form of changes in the database.</li>
-    <li>The command of DML is not auto-committed that means it can't permanently save all the changes in the database. They can be rollback.</li>
-</ul>
-<h4>Here are some commands that come under DML:
-    o	INSERT
-    o	UPDATE
-    o	DELETE
-    </h4>
+<br>        
+
+    <p>DML commands are used to modify the database. It is responsible for all form of changes in the database.</p>
+    <p>The command of DML is not auto-committed that means it can't permanently save all the changes in the database.
+    They can be rollback.</p>
+
+<p>Here are some commands that come under DML:
+    <strong>INSERT</strong>,
+    <strong>UPDATE</strong>,
+    <strong>DELETE</strong>
+    </p>
 
 <div class="flex5">
-<p>
+<br>
 <h4>INSERT:</h4>
-<h4><strong> The INSERT statement is a SQL query. It is used to insert data into the row of a table.
-    </strong></h4>
+<p> The INSERT statement is a SQL query. It is used to insert data into the row of a table.
+</p>
 <ul>
+    <br>
     <li><strong>Syntax:</strong></li>
     <li>1.	INSERT INTO TABLE_NAME    
         2.	(col1, col2, col3,.... col N)  
@@ -207,76 +221,83 @@
         1.	INSERT INTO TABLE_NAME    
         2.	VALUES (value1, value2, value3, .... valueN);    
          </li>
+         <br>
     <li><strong>Example:</strong></li>
     <li>1.	INSERT INTO javatpoint (Author, Subject) VALUES ("Sonoo", "DBMS");  </li>
 </ul>
-
+<br>
 </div>
+<br>
+<hr>
 <div class="flex6">
-  
+<br> 
 <h4>UPDATE: </h4>
-<h4><strong>This command is used to update or modify the value of a column in the table.
-    </strong></h4>
+<p>This command is used to update or modify the value of a column in the table.
+</p>
+<br>
 <ul>
     <li><strong>Syntax:</strong></li>
-    <li>1.	UPDATE table_name SET [column_name1= value1,...column_nameN = valueN] [WHERE CONDITION]</li>
+    <li>UPDATE table_name SET [column_name1= value1,...column_nameN = valueN] [WHERE CONDITION]</li>
+    <br>
     <li><strong>Example:</strong></li>
     <li>1.	UPDATE students    
         2.	SET User_Name = 'Sonoo'    
         3.	WHERE Student_Id = '3'  
         </li>
 </ul>
-
+<br>
+<hr>
 
 </div>
 
 <div class="flex7">
-
+<br>
 <h4>DELETE: </h4>
-<h4><strong>It is used to remove one or more row from a table.
-</strong></h4>
+<br>
+<p>It is used to remove one or more row from a table.
+</p>
+<br>
 <ul>
 <li><strong>Syntax:</strong></li>
 <li>DELETE FROM table_name [WHERE condition];  </li>
+<br>
 <li><strong>Example:</strong></li>
 <li>1.	DELETE FROM javatpoint  
     2.	WHERE Author="Sonoo";  
     </li>
 </ul>
-
+<br>
+<br>
 </div>
 <h3><strong>Data Control Language (DCL)</strong></h3>
-        
-<ul>
-    <li>DCL commands are used to grant and take back authority from any database user.
+<br>        
+<p>DCL commands are used to grant and take back authority from any database user.
         Here are some commands that come under DCL:
-        </li>
- 
-</ul>
-<h4>Here are some commands that come under DCL:
-Grant
-Revoke
+</p>
 
-    </h4>
+<strong>GRANT</strong>,
+<strong>REVOKE</strong>
 
 <div class="flex8">
-<p>
-<h4>Grant: </h4>
-<h4><strong>It is used to give user access privileges to a database.
-    </strong></h4>
+<br>
+<h4>GRANT: </h4>
+<p>It is used to give user access privileges to a database.
+</p>
 <ul>
-   
+    <br>  
     <li><strong>Example:</strong></li>
     <li>GRANT SELECT, UPDATE ON MY_TABLE TO SOME_USER, ANOTHER_USER;  </li>
 </ul>
-
 </div>
+<br>
+<hr>
 <div class="flex9">
-  
+    <br>
+ 
 <h4>REVOKE: </h4>
-<h4><strong>It is used to take back permissions from the user.
-    </strong></h4>
-<ul>
+<p>It is used to take back permissions from the user.
+</p>
+<br>
     
     <li><strong>Example:</strong></li>
     <li>REVOKE SELECT, UPDATE ON MY_TABLE FROM USER1, USER2;  
@@ -284,47 +305,55 @@ Revoke
 </ul>
 </div>
 
-
+<br>
+<br>
 
 
 <h3><strong>Transaction Control Language (TCL)</strong></h3>
-        
-<ul>
-    <li>TCL commands can only use with DML commands like INSERT, DELETE and UPDATE only.</li>
-    <li>These operations are automatically committed in the database that's why they cannot be used while creating tables or dropping them.</li>
-</ul>
-<h4>Here are some commands that come under TCL:
-    o	COMMIT
-    o	ROLLBACK
-    o	SAVEPOINT
-    
-    </h4>
+<br>       
 
+    <p>TCL commands can only use with DML commands like INSERT, DELETE and UPDATE only.</p>
+    <p>These operations are automatically committed in the database that's why they cannot 
+        be used while creating tables or dropping them.</p>
+<br>
+<p>Here are some commands that come under TCL:
+    <strong>COMMIT</strong>,
+    <strong>ROLLBACK</strong>,
+    <strong>SAVEPOINT</strong>
+   
+</p>
+<br>
 <div class="flex10">
-<p>
+
 <h4>COMMIT:</h4>
-<h4><strong>Commit command is used to save all the transactions to the database.
-    </strong></h4>
+
+<p>Commit command is used to save all the transactions to the database.
+</p>
+<br>
 <ul>
     <li><strong>Syntax:</strong></li>
-    <li>COMMIT;  
-         </li>
+    <li>COMMIT;</li>
+    <br>
     <li><strong>Example:</strong></li>
     <li>1.	DELETE FROM CUSTOMERS  
         2.	WHERE AGE = 25;  
         3.	COMMIT;  
         </li>
 </ul>
+<br>
 
 </div>
+<hr>
 <div class="flex11">
-  
+    <br> 
 <h4>ROLLBACK: </h4>
-<h4><strong>. Rollback: Rollback command is used to undo transactions that have not already been saved to the database.
-    </strong></h4>
+<p>Rollback: Rollback command is used to undo transactions that have not already been saved to the database.
+    <p>
+        <br>
 <ul>
     <li><strong>Syntax:</strong></li>
     <li>ROLLBACK;</li>
+    <br>
     <li><strong>Example:</strong></li>
     <li>1.	DELETE FROM CUSTOMERS  
         2.	WHERE AGE = 25;  
@@ -332,46 +361,48 @@ Revoke
         
         </li>
 </ul>
-
-
+<br>
+<hr>
 </div>
 
 <div class="flex12">
-
+    <br>
 <h4>SAVEPOINT:</h4>
-<h4><strong> It is used to roll the transaction back to a certain point without rolling back the entire transaction.
-</strong></h4>
+<p> It is used to roll the transaction back to a certain point without rolling back the entire transaction.
+</p>
+<br>
 <ul>
 <li><strong>Syntax:</strong></li>
 <li>SAVEPOINT SAVEPOINT_NAME;   </li>
-
 </ul>
 
 </div>
+<br>
 
+<br>
 <h3><strong>Data Query Language(DQL)</strong></h3>
-        
-<ul>
-    <li>DQL is used to fetch the data from the database.</li>
+<br><br>       
+<p>DQL is used to fetch the data from the database.</p>
     
-</ul>
-<h4>It uses only one command:
-    o	SELECT
-    
-    
-    </h4>
 
+<p>It uses only one command:
+<strong>SELECT</strong>  
+    
+    </p>
+<br>
+<hr>
 <div class="flex13">
-<p>
+<br>
 <h4>SELECT:</h4>
-<h4><strong>SELECT: This is the same as the projection operation of relational algebra. It is used to select the attribute based on the condition described by WHERE clause.
-    </strong></h4>
+<p>This is the same as the projection operation of relational algebra. It is used to select the attribute based on the condition described by WHERE clause.
+</p>
+<br>
 <ul>
     <li><strong>Syntax:</strong></li>
     <li>1.	SELECT expressions    
         2.	FROM TABLES    
         3.	WHERE conditions;  
-        
+        <br>       
          </li>
     <li><strong>Example:</strong></li>
     <li>1.	SELECT emp_name  
@@ -380,10 +411,365 @@ Revoke
         
         </li>
 </ul>
+<br>
+<br>
+<br>
+</div>
+
+<!--End Post 2-->               
+       
+<!--Blog Post 3-->
+
+<h2>Database Normalization with Examples:</h2>
+<br>
+<p>Database Normalization is organizing non structured data in to structured data.Database normalization is nothing but organizing the tables and columns of the tables in such way that it should reduce the data redundancy and complexity of data and improves the integrity of data.</p>
+<blockquote><p>Database Normalization is nothing but technique of designing the database in structured way to reduce redundancy and improve data integrity.</p></blockquote>
+<p>Database Normalization is used for following Purpose:</p>
+<ol>
+<li>To Eliminate the redundant or useless data</li>
+<li>To Reduce the complexity of the data</li>
+<li>To Ensure the relationship between tables as well as data in the tables</li>
+<li>To Ensure data dependencies and data is logically stored.</li>
+
+<br>
+</ol>
+<img src="images/normalization.png" alt="types" width="350px" height="250px"></p>
+<br>
+<h3>Need Of Database Normalization:</h3>
+<br>
+<p>If your database objects are not in structured or normalized way it is difficult to update the database without facing the database loss.Insertion,Updation and deletion are very frequent if data is not normalized.Normalization is part of successful database design.Without Database normalization the database system can be slow,Inaccurate and inefficient.</p>
+<p><strong>Real Life Example of data which is not normalized:</strong></p>
+<p>Lets take Example of Employee Table:</p>
+<table>
+<tbody>
+<tr>
+<td width="154">Employee ID</td>
+<td width="154">Employee Name</td>
+<td width="154">City</td>
+<td width="154">Department</td>
+</tr>
+<tr>
+<td width="154">101</td>
+<td width="154">Amit</td>
+<td width="154">Kolhapur</td>
+<td width="154">OBIEE,COGNOS</td>
+</tr>
+<tr>
+<td width="154">102</td>
+<td width="154">Divya</td>
+<td width="154">Indore</td>
+<td width="154">COGNOS</td>
+</tr>
+<tr>
+<td width="154">103</td>
+<td width="154">Yodhini</td>
+<td width="154">Hydrabad</td>
+<td width="154">SIEBEL</td>
+</tr>
+<tr>
+<td width="154">104</td>
+<td width="154">Amit</td>
+<td width="154">Kolhapur</td>
+<td width="154">ETL</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 
- 
+<p>If new employee joined company and he or she has not alloted to department.Hence We need to insert nulll value there which leads to insertion Anamoly.</p>
+<p>Deletion Anamoly:</p>
+<p>If Employee_id 101 has only 1 department and we delete that temparary then Entire student record will be deleted.</p>
+<p>To Overcome these kind of issues there is need to use the database normalized forms.When we try to normalize database check following 4 important points:</p>
+<p>1.Arrangement of data into logical groups.</p>
+<p>2.Minimize the Duplicate data.</p>
+<p>3.Organize  the data in such way that when modification needed then there should be only one place modification required.</p>
+<p>4.User can access and manipulate data quickly and efficiently.</p>
+<br>
+<h3>Database Normalization Forms:</h3>
+<br>
+<p>There are following Four Normal Forms used in Database Normalization:
+    <img src="images/forms.png" alt="types" width="350px" height="250px"></p>
+</p>
+<p>1.First Normal Form</p>
+<p>2.Second Normal Form</p>
+<p>3.Third Normal Form</p>
+<p>4. Boyce-code Normal Form(BCNF)</p>
+<br>
+
+<h3>1.First Normal Form/1st Normal Form:</h3>
+<br>
+<p>The first normal form is the normal form of database where data must not contain repeating groups.The database is in First normal form If,</p>
+<p>1.It contains only automic values.</p>
+<blockquote><p><strong>Automic values:-</strong> The Single cell have only single value</p></blockquote>
+<p>2.Each Record needs to be unique and there are no repeating groups.</p>
+<blockquote><p><strong>Repeating Groups:-</strong> Repeating group means a table contains 2 or more values of columns that are closely related.</p></blockquote>
+<p><strong>Example:</strong></p>
+<p>Consider following table which is not normalized:</p>
+<p>Employee Table:</p>
+<table>
+<tbody>
+<tr>
+<td width="205">Employee No</td>
+<td width="205">Employee Name</td>
+<td width="205">Department</td>
+</tr>
+<tr>
+<td width="205">1</td>
+<td width="205">Amit</td>
+<td width="205">OBIEE,ETL</td>
+</tr>
+<tr>
+<td width="205">2</td>
+<td width="205">Divya</td>
+<td width="205">COGNOS</td>
+</tr>
+<tr>
+<td width="205">3</td>
+<td width="205">Rama</td>
+<td width="205">Administrator</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>To bring it in to first normal form We need to split table into 2 tables.</p>
+<p>First table:Employee Table</p>
+<table>
+<tbody>
+<tr>
+<td width="205">Employee No</td>
+<td width="205">Employee Name</td>
+</tr>
+<tr>
+<td width="205">1</td>
+<td width="205">Amit</td>
+</tr>
+<tr>
+<td width="205">2</td>
+<td width="205">Divya</td>
+</tr>
+<tr>
+<td width="205">3</td>
+<td width="205">Rama</td>
+</tr>
+</tbody>
+</table>
+<p>Second Table: Department table</p>
+<table>
+<tbody>
+<tr>
+<td width="308">Employee No</td>
+<td width="308">Department</td>
+</tr>
+<tr>
+<td width="308">1</td>
+<td width="308">OBIEE</td>
+</tr>
+<tr>
+<td width="308">1</td>
+<td width="308">ETL</td>
+</tr>
+<tr>
+<td width="308">2</td>
+<td width="308">COGNOS</td>
+</tr>
+<tr>
+<td width="308">3</td>
+<td width="308">Administrator</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>We have divided the table into two different tables and the column of each table is holding the automic values and duplicates also removed.</p>
+<br>
+<h3>2.Second Normal Form/2nd Normal Form:</h3>
+<br>
+<p>The data is said to be in second normalized form If,</p>
+<p>1.It is in First normal form</p>
+<p>2.There should not be any partial dependency of any column on primary key.Means the table have concatanated primary key and each attribute in table depends on that concatanated primary key.</p>
+<p>3.All Non-key attributes are fully functionally dependent on primary key.If primary is is not composite key then all non key attributes are fully functionally dependent on primary key.</p>
+<p><strong>Example:</strong></p>
+<p>Let us consider following table which is in first normal form:</p>
+<table>
+<tbody>
+<tr>
+<td width="157">Employee No</td>
+<td width="136">Department No</td>
+<td width="157">Employee Name</td>
+<td width="166">Department</td>
+</tr>
+<tr>
+<td width="157">1</td>
+<td width="136">101</td>
+<td width="157">Amit</td>
+<td width="166">OBIEE</td>
+</tr>
+<tr>
+<td width="157">2</td>
+<td width="136">102</td>
+<td width="157">Divya</td>
+<td width="166">COGNOS</td>
+</tr>
+<tr>
+<td width="157">3</td>
+<td width="136">101</td>
+<td width="157">Rama</td>
+<td width="166">OBIEE</td>
+</tr>
+</tbody>
+</table>
+<p>In above example we can see that department .Here We will see that there is composit key as{ Employee No,Department No}.Employee No is dependent on Employee Name and Department is dependent on Department No.We can split the above table into 2 different tables:</p>
+<p>Table 1:Employee_NO table</p>
+<table>
+<tbody>
+<tr>
+<td width="157">Employee No</td>
+<td width="136">Department No</td>
+<td width="157">Employee Name</td>
+</tr>
+<tr>
+<td width="157">1</td>
+<td width="136">101</td>
+<td width="157">Amit</td>
+</tr>
+<tr>
+<td width="157">2</td>
+<td width="136">102</td>
+<td width="157">Divya</td>
+</tr>
+<tr>
+<td width="157">3</td>
+<td width="136">101</td>
+<td width="157">Rama</td>
+</tr>
+</tbody>
+</table>
+<p>Table 2:Department table</p>
+<table>
+<tbody>
+<tr>
+<td width="157">Department No</td>
+<td width="166">Department</td>
+</tr>
+<tr>
+<td width="157">101</td>
+<td width="166">OBIEE</td>
+</tr>
+<tr>
+<td width="157">102</td>
+<td width="166">COGNOS</td>
+</tr>
+</tbody>
+</table>
+<p>Now we have simplified the table in to second normal form where each entity of table is functionally dependent on primary key.</p>
+<img src="images/normal_forms.png" alt="types" width="350px" height="250px"></p>
+<br>
+<h3>Third Normal Form/3rd Normal Form:</h3>
+<br>
+<p>The database is in Third normal form if it satisfies following conditions:</p>
+<p>1.It is in Second normal form</p>
+<p>2.There is no transitive functional dependency</p>
+<blockquote><p><strong>Transitive Dependency:</strong></p>
+<p>When table 1 is Functionally dependent on table 2. and table 2 is functionally dependent on table 3 then.table 3 is transitively dependent on table 1 via table 2.</p></blockquote>
+<p><strong>Example:</strong></p>
+<p>Consider following table:</p>
+<table>
+<tbody>
+<tr>
+<td width="157">Employee No</td>
+<td width="136">Salary Slip No</td>
+<td width="157">Employee Name</td>
+<td width="166">Salary</td>
+</tr>
+<tr>
+<td width="157">1</td>
+<td width="136">0001</td>
+<td width="157">Amit</td>
+<td width="166">50000</td>
+</tr>
+<tr>
+<td width="157">2</td>
+<td width="136">0002</td>
+<td width="157">Divya</td>
+<td width="166">40000</td>
+</tr>
+<tr>
+<td width="157">3</td>
+<td width="136">0003</td>
+<td width="157">Rama</td>
+<td width="166">57000</td>
+</tr>
+</tbody>
+</table>
+<p>In above table Employee No determines the Salary Slip No.And Salary Slip no Determines Employee name.Therefore Employee No determines Employee Name.We have transitive functional dependency so that this structure not satisfying Third Normal Form.</p>
+<p>For That we will Split tables into following 2 tables:</p>
+<p>Employee table:</p>
+<table>
+<tbody>
+<tr>
+<td width="157">Employee No</td>
+<td width="136">Salary Slip No</td>
+<td width="157">Employee Name</td>
+</tr>
+<tr>
+<td width="157">1</td>
+<td width="136">0001</td>
+<td width="157">Amit</td>
+</tr>
+<tr>
+<td width="157">2</td>
+<td width="136">0002</td>
+<td width="157">Divya</td>
+</tr>
+<tr>
+<td width="157">3</td>
+<td width="136">0003</td>
+<td width="157">Rama</td>
+</tr>
+</tbody>
+</table>
+<p>Salary Table:</p>
+<table>
+<tbody>
+<tr>
+<td width="136">Salary Slip No</td>
+<td width="157">Salary</td>
+</tr>
+<tr>
+<td width="136">0001</td>
+<td width="157">50000</td>
+</tr>
+<tr>
+<td width="136">0002</td>
+<td width="157">40000</td>
+</tr>
+<tr>
+<td width="136">0003</td>
+<td width="157">57000</td>
+</tr>
+</tbody>
+</table>
+<p>Following are 2 Advantages of 3rd normal form:</p>
+<p>1.Amount of data duplication is removed because transitive dependency is removed in third normal form.</p>
+<p>2.Achieved Data integrity</p>
+<br>
+<h3>4.BCNF(Boyce-Codd Normal Form)</h3>
+<br>
+<p>BCNF Normal form is higher version of third normal form.This form is used to handle analomies which are not handled in third normal form.BCNF does not allow dependencies between attributes that belongs to candidate keys.It drops restriction of the non key attributes from third normal form.</p>
+<p>Third normal form and BCNF are not same if following conditions are true:</p>
+<p>1.The table has 2 or more candidate keys</p>
+<p>2.At least two of candidate keys are composed of more than 1 attribute</p>
+<p>3.The keys are not disjoint.</p>
+<p>Example:</p>
+<p>Address-&gt; {City,Street,Zip}</p>
+<p>Key 1-&gt; {City,Zip}</p>
+<p>Key 2-&gt;{City,Street}</p>
+<p>No non key attribute hence this example is of 3 NF.</p>
+<p>{City,Street}-&gt;{zip}</p>
+<p>{Zip}-&gt;{City}</p>
+<p>There is dependency between attributes belonging to key.Hence this is BCNF.</p>
+
+<ul>
        
 </div>
 </div>
