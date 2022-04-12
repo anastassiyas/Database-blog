@@ -690,3 +690,34 @@ h3 {
 	}
     
 }
+footer {
+    text-align:center;
+    color: white;
+    background-color: grey;
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+  }
+
+th, td {
+    padding:5px;
+}
+
+th {
+    background-color:grey;
+    color: #040904;
+    font-size:20px;
+}
+
+td {
+    color: grey;
+    font-size:18px;
+    text-align:center;
+    width: 300px;
+    font-weight: -500;
+}
