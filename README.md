@@ -24,6 +24,6 @@ HTML
 
 CSS
 
-JS
+
 
 
