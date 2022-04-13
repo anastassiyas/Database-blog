@@ -9,7 +9,7 @@ https://anastassiyas.github.io/Database-blog/
 
 **Overview:**
 
-This blog is  about the IT world. It shares a vast amount of information on different Information Technology topics which include mobile, software, security, Internet and much more.It provides knowledge about the latest Internet threats, hacking and also shares information on different aspects of data security.
+This blog is  about Databases. It shares a vast amount of information on different Information Technology topics which include mobile, software, security, Internet and much more.It provides knowledge about the latest Internet threats, hacking and also shares information on different aspects of data security.
 
 **Goal:**
 
