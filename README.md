@@ -10,10 +10,9 @@ https://anastassiyas.github.io/Database-blog/
 **Overview:**
 
 This blog is  about Databases. It shares a vast amount of information on different Information Technology topics which include mobile, software, security, Internet and much more.It provides knowledge about the latest Internet threats, hacking and also shares information on different aspects of data security.
+This blog will cover issues regarding database management and DBMSes, data architecture, database administration and design, data administration, data warehousing, Big Data, business intelligence and analytics, and related topics and news.
 
-**Goal:**
 
-Information Technology is the current big thing and businesses are embracing it on a vast scale. People from all walks of life are intrigued by the way IT is progressing at an overwhelming rate and transforming the digital world. If you are someone who is keen to learn about the newest technologies, digital industry, and the web in general, then keep reading.
 
 **Technologies to be used:**
 
